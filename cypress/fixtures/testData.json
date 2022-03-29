@@ -1,0 +1,10 @@
+{
+    "firstName":"Cristina",
+    "lastName": "Feldiorean",
+    "PostCode": "45000",
+    "alertmsg": "Customer added successfully",
+    "accountmsg":"Account created successfully",
+    "customer":"Cristina Feldiorean",
+    "currency":"Dollar",
+    "accountalert":"Account created successfully"
+}
