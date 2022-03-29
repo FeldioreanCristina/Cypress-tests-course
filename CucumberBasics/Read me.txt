@@ -1,0 +1,27 @@
+Basic Installation:
+---> Download:
+ -Jdk 1.8
+ -Node.js
+ -VSC
+
+---> In Visual Studio Code :
+
+ - npm init (add details in package.json)
+
+-> Download and config Cucumber :
+
+ -npm install cucumber -->node_modules file added
+
+---> Gherkin language :Given, When, Then (behavior driven approch):
+
+- Search in VSC extenions & install: Cucumber (Gherkin) Full Support
+
+---> Create first feature file
+
+- create a folder features and a file login.feature : Feature title and description; Scenario name and Steps
+- right click and Format document
+
+--->Run Cucumber in terminal : 
+
+- .\node_modules\.bin\cucumber-js features
+
