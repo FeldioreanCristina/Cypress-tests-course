@@ -23,5 +23,14 @@ Basic Installation:
 
 --->Run Cucumber in terminal : 
 
-- .\node_modules\.bin\cucumber-js features
+- .\node_modules\.bin\cucumber-js .\features or node_modules\.bin\cucumber-js or npx cucumber-js
+
+--> First step definition : create a js file in stepsDef
+
+- var{Given,When, Then} = require ('cucumber');
+-Given, When , Then + code (functions to be executed)
+
+--> Common steps
+Background: 2 steps ex.
+
 
