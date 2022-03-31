@@ -11,7 +11,10 @@
         "html": true,
         "json": true,
         "charts":true
-    }
+    },
+
+        "testFiles": "**/*.feature"
+      
 
 
 }
