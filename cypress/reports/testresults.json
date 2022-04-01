@@ -1,34 +1,34 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
-    "pending": 0,
+    "tests": 3,
+    "passes": 2,
+    "pending": 1,
     "failures": 0,
-    "start": "2022-03-31T15:48:01.897Z",
-    "end": "2022-03-31T15:48:19.138Z",
-    "duration": 17241,
-    "testsRegistered": 1,
+    "start": "2022-04-01T06:23:59.000Z",
+    "end": "2022-04-01T06:24:35.136Z",
+    "duration": 36136,
+    "testsRegistered": 3,
     "passPercent": 100,
-    "pendingPercent": 0,
+    "pendingPercent": 33.33333333333333,
     "other": 0,
     "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "skipped": 1,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "e53c1701-6cc7-4fd1-84bb-dc71830a96da",
+      "uuid": "08207a90-a8c1-492f-bceb-ca5ce86c395e",
       "title": "",
-      "fullFile": "cypress\\integration\\BankManagerLogin.feature",
-      "file": "cypress\\integration\\BankManagerLogin.feature",
+      "fullFile": "cypress\\integration\\Banking.feature",
+      "file": "cypress\\integration\\Banking.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "169e0b80-0db5-49b5-be27-a5dd28674be9",
-          "title": "Bank Manager Login",
+          "uuid": "0db4f5f7-cdf1-40fb-ae62-83d04f55c7f2",
+          "title": "Bank Feature",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,9 +36,9 @@
           "tests": [
             {
               "title": "Login as Bank Manager",
-              "fullTitle": "Bank Manager Login Login as Bank Manager",
+              "fullTitle": "Bank Feature Login as Bank Manager",
               "timedOut": null,
-              "duration": 16771,
+              "duration": 14411,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,63 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "0c06ec0a-b0da-4d33-aa6c-8df35e97c4a7",
-              "parentUUID": "169e0b80-0db5-49b5-be27-a5dd28674be9",
+              "uuid": "32febb40-3a63-4288-a2d0-f63be24efa6e",
+              "parentUUID": "0db4f5f7-cdf1-40fb-ae62-83d04f55c7f2",
               "isHook": false,
               "skipped": false
+            },
+            {
+              "title": "Add a Customer",
+              "fullTitle": "Bank Feature Add a Customer",
+              "timedOut": null,
+              "duration": 18615,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "05582a37-84ef-4b05-93f4-31bc3a7c24ab",
+              "parentUUID": "0db4f5f7-cdf1-40fb-ae62-83d04f55c7f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Opening Account",
+              "fullTitle": "Bank Feature Opening Account",
+              "timedOut": null,
+              "duration": 2438,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
+              "err": {
+                "message": "CypressError: sync skip; aborting execution",
+                "estack": "[object Object]\nFrom Your Spec Code:\n    at Context.eval (https://www.way2automation.com/__cypress/tests?p=cypress\\integration\\Banking.feature:5534:10)",
+                "diff": null
+              },
+              "uuid": "cbc08029-7246-4fd3-ab4c-4f22edc8b799",
+              "parentUUID": "0db4f5f7-cdf1-40fb-ae62-83d04f55c7f2",
+              "isHook": false,
+              "skipped": true
             }
           ],
           "suites": [],
           "passes": [
-            "0c06ec0a-b0da-4d33-aa6c-8df35e97c4a7"
+            "32febb40-3a63-4288-a2d0-f63be24efa6e",
+            "05582a37-84ef-4b05-93f4-31bc3a7c24ab"
           ],
           "failures": [],
           "pending": [],
-          "skipped": [],
-          "duration": 16771,
+          "skipped": [
+            "cbc08029-7246-4fd3-ab4c-4f22edc8b799"
+          ],
+          "duration": 35464,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
